@@ -19,14 +19,38 @@
             improve our offering!
         </p>
         <div class="button">
-            <input class="btn" type="button" id="value1" value="1" >
-            <input class="btn" type="button" id="value2" value="2" >
-            <input class="btn" type="button" id="value3" value="3" >
-            <input class="btn" type="button" id="value4" value="4" >
+            <input class="btn0" type="button" id="value1" value="1" >
+            <input class="btn1" type="button" id="value2" value="2" >
+            <input class="btn2" type="button" id="value3" value="3" >
+            <input class="btn3" type="button" id="value4" value="4" >
             <input class="btn" type="button" id="value5" value="5" >
         </div>
-        <input class="btn-submit" type="button" id="submit" value="SUBMIT" >
+        
+        <a class="btn-submit" href="./thanks.html">SUBMIT</a>
     </div>
+
+    <script>
+        
+        var a = document.getElementsByClassName('btn')[0]
+        a.addEventListener('click', clicar)
+
+        function clicar() {
+            
+            a.style.background = 'orange'
+            console.log(a);
+        }
+        var b = document.getElementsByClassName('btn')[1]
+        b.addEventListener('click', clicar)
+
+        function clicar() {
+            
+            b.style.background = 'orange'
+            console.log(b);
+        }
+        
+    </script>
+
+    
     
 </body>
 </html>
