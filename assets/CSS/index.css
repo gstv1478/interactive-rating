@@ -59,6 +59,10 @@ h1, p{
     padding: 0 0 22.5px 0 ;
     font-weight: normal;
 }
+.main-p {
+    color:hsl(210, 1%, 69%);
+    margin-bottom: 20px; 
+}
 
 .tks-h1 {
     margin: 10px 45px 20px 105px;
@@ -68,7 +72,7 @@ h1, p{
 
 .gray {
     color:hsl(210, 1%, 69%);
-    padding: 0 25px 27.5px 25px ;
+    padding: 0 25px 27.5px;
     font-size: 13px;
     text-align: center;
 } 
@@ -128,10 +132,15 @@ li {
     display: none;
 }
 
-@media (min-width: 1000px) {
+.btn:focus{
+    background-color: hsl(217, 12%, 63%);
+}
+
+@media (min-width: 1201px) {
 .btn:hover{
     background-color:  hsl(25, 97%, 53%);
 }
+
 
 .btn-submit:hover {
     background-color: hsl(0, 0%, 100%);
@@ -139,41 +148,82 @@ li {
 }
 }
 
-@media  (max-width: 500px){
+@media  (max-width: 1100px){
     .main{
         background: hsl(213, 19%, 18%);
-        height: 40vh;
-        width: 78%;
+        height: 55em;
+        width: 42em;
         padding: 3vh;
-        border-radius: 24px;
+        border-radius:3em;
     
     }
-
-    img {
+    .photoOne {
         background: hsl(213, 19%, 25%);
-        padding: 25px;
+        padding: 2em;
+        margin-bottom: 2em;
         border-radius: 50%;
-        height: 40px
-        
+        height: 3em;
     }
 
-    .btn-submit{
-        height: 100px;
-        width: 750px;
-        
-    }
-    h1 {
-        font-size: 55px;
+    .main-h1 {
+        font-size: 4em;
         padding: 0 0 22.5px 0 ;
         font-weight: normal;
     }
-    
-    p {
+
+    .main-p {
         color:hsl(210, 1%, 69%);
-        padding: 0 0 27.5px 0 ;
-        font-size: 35px;
-        line-height: 55px;
+        margin-bottom: 2em;
+        font-size: 2.3em;
+    }
+
+    .btn-submit {
+        padding: 1.5em;
+        height: 1em;
+        width: 17em;   
+        font-size: 2.5em;
+        border-radius: 40em;
+        line-height: 0.01em; 
+    }
+    
+
+    .thank{
+        background: hsl(213, 19%, 18%);
+        height: 55em;
+        width: 42em;
+        padding: 3em;
+        border-radius: 3em;
+    }
+
+    .photoTwo {
+        display: block;
+        margin:auto;
+        padding: 3em 0;
+        width: 20em;
+        height: 17em;
+    }
+
+    .orange  {
+        
+        padding: 0.7em 0;
+        border-radius: 5em;
+        width:12em;
+        font-size: 2.3em;
+        margin: 0.5em 3.5em;
+        
     } 
+    .gray {
+        color:hsl(210, 1%, 69%);
+        padding: 0 0.8em 1.9em;
+        font-size: 2.3em;
+        text-align: center;
+    } 
+
+    .tks-h1 {
+        margin: 0.8em 1em 0.8em 3em;
+        font-size:4em;
+        font-weight: 400;
+    }
     .btn {
         height: 6vh;
         width: 6vh;
