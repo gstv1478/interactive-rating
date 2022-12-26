@@ -11,46 +11,35 @@
 <body>
     <div class="main">
         <div class="star">
-            <img src="./assets/img/icon-star.svg" alt="estrela"/>
+            <img class="photoOne" src="./assets/img/icon-star.svg" alt="estrela"/>
         </div>
-        <h1>How did we do?</h1>
-        <p>Please let us know we did with your support request.
+        <h1 class="main-h1">How did we do?</h1>
+        <p class="gray">Please let us know we did with your support request.
             All feedback is appreciated to help us 
             improve our offering!
         </p>
-        <div class="button">
-            <input class="btn0" type="button" id="value1" value="1" >
-            <input class="btn1" type="button" id="value2" value="2" >
-            <input class="btn2" type="button" id="value3" value="3" >
-            <input class="btn3" type="button" id="value4" value="4" >
-            <input class="btn" type="button" id="value5" value="5" >
-        </div>
+        <ul >
+            <li><button class="btn">1</button></li>
+            <li><button class="btn">2</button></li>
+            <li><button class="btn">3</button></li>
+            <li><button class="btn">4</button></li>
+            <li><button class="btn">5</button></li>
+        </ul>
         
-        <a class="btn-submit" href="./thanks.html">SUBMIT</a>
+        <button class="btn-submit" id="submit">SUBMIT</button>
+        
     </div>
-
-    <script>
+    <div class="thank hidden">
+        <img class="photoTwo" src="./assets/img/illustration-thank-you.svg" alt="imagem de agradecimento"/>
+        <p class="orange">You selected out 
+            <span id="rating"></span> of 5 </p>
+        <h1 class="tks-h1">Thank you!</h1>
+        <p class="gray">We appreciate you taking the time to give a rating.
+            If you ever need more support, don't hesitage to
+            get in touch!
+        </p>
         
-        var a = document.getElementsByClassName('btn')[0]
-        a.addEventListener('click', clicar)
-
-        function clicar() {
-            
-            a.style.background = 'orange'
-            console.log(a);
-        }
-        var b = document.getElementsByClassName('btn')[1]
-        b.addEventListener('click', clicar)
-
-        function clicar() {
-            
-            b.style.background = 'orange'
-            console.log(b);
-        }
-        
-    </script>
-
-    
-    
+    </div>
+    <script src="./assets/Js/index.js"></script>
 </body>
 </html>
